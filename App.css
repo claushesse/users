@@ -1,0 +1,19 @@
+.app-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.users-container {
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  .app-container {
+    padding: 0;
+  }
+}

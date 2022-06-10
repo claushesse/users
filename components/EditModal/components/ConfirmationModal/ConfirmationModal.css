@@ -1,0 +1,28 @@
+.confirmation-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all 0.5s ease-out;
+}
+
+.confirmation-modal-content {
+  max-width: 500px;
+  padding: 0 20px 20px;
+  background-color: rgb(255, 255, 255);
+  overflow-y: scroll;
+  z-index: 4;
+  display: flex;
+  flex-flow: column;
+}
+
+.confirmation-message {
+  padding: 20px;
+}

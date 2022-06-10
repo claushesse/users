@@ -1,0 +1,149 @@
+.edit-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all 0.5s ease-out;
+}
+
+.edit-modal-content {
+  max-width: 500px;
+  padding: 0 20px 20px;
+  background-color: rgb(255, 255, 255);
+  overflow-y: scroll;
+  z-index: 2;
+  display: flex;
+  flex-flow: column;
+}
+
+.edit-modal-close-top {
+  align-self: flex-end;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.edit-modal-content h1 {
+  margin: 0 10px 10px;
+  text-align: center;
+}
+
+.edit-modal-picture {
+  align-self: center;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.edit-modal-picture-img {
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  border: 5px solid white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.edit-modal-picture img {
+  max-width: 128px;
+  max-height: 128px;
+}
+
+.edit-modal-form {
+  align-self: center;
+  max-width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.edit-modal-input-container {
+  display: flex;
+  flex-flow: column;
+  margin: 7px 0;
+  padding: 5px;
+}
+
+.edit-modal-input-container input {
+  padding: 3px;
+  min-width: 200px;
+}
+
+.edit-modal-input-container label {
+  font-weight: bold;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.edit-modal-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.edit-modal-button-container {
+  margin: 20px 10px 10px;
+}
+
+.edit-modal-button-container button {
+  padding: 5px;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  min-width: 100px;
+  cursor: pointer;
+  transition: box-shadow 0.5s;
+}
+
+.edit-modal-button-container button:hover {
+  box-shadow: 0 4px 8px 0 rgba(16, 114, 241, 0.2),
+    0 6px 8px 0 rgba(0, 0, 0, 0.19);
+}
+
+.edit-modal-save-button {
+  background-color: rgb(16, 114, 241);
+  border-color: rgb(16, 114, 241);
+  box-shadow: none;
+  color: white;
+}
+
+.edit-modal-cancel-button {
+  background-color: white;
+  color: rgb(16, 114, 241);
+  border-color: rgb(16, 114, 241);
+  outline: none;
+}
+
+@media (max-width: 700px) {
+  .edit-modal-form {
+    align-self: center;
+    max-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .edit-modal-input-container {
+    padding: 0;
+  }
+  .edit-modal-input-container input {
+    max-width: 130px;
+  }
+}
+
+@media (max-width: 300px) {
+  .edit-modal-content {
+    padding: 0;
+  }
+}
+
+@media (max-height: 700px) {
+  .edit-modal-content {
+    max-height: 500px;
+    overflow-y: scroll;
+  }
+}

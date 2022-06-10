@@ -1,0 +1,12 @@
+.filters-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 700px) {
+  .filters-container {
+    justify-content: center;
+  }
+}

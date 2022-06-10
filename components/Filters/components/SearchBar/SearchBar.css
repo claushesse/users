@@ -1,0 +1,25 @@
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px;
+}
+
+.search-label {
+  margin-right: 5px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.search-input {
+  padding: 5px;
+  width: 100%;
+  min-width: 200px;
+}
+
+@media (max-width: 300px) {
+  .search-input {
+    min-width: 150px;
+  }
+}
